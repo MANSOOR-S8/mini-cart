@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="shortcut icon" href="./Assets/lll.jpeg" type="image/x-icon">
+    <title>Cart</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="bottom-bar">
+            <div class="bottom-bar__content">
+                <a href="#" class="logo">
+                    <img class="logo__img" src="./Assets/lll.jpeg" alt="logo">
+                    <span class="logo__text">KickVault</span>
+                </a>
+
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#">Cart</a></li>
+                        <li class="nav__item">
+                            <button id="btn" class="cart-btn">
+                                <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <span id="cart-count" class="cart-count">0</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Cards -->
+    <div class="main-card">
+        <div class="ads"></div>
+
+        <div class="cards">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./Assets/1.jpg" alt="" width="280px">
+                </div>
+                <h4>Nike</h4>
+                <p>Description will be here, If we provide any description about product</p>
+                <div class="price">
+                    <span>$24.00</span>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards" style="border:1px solid black; width: 280px;">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./Assets/2.jpg" alt="" width="300px">
+                </div>
+                <h4>Nike</h4>
+                <p>Description will be here, If we provide any description about product</p>
+                <div class="price">
+                    <span>$24.00</span>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card-body">
+                <div class="card-img">
+                    <img src="./Assets/3.jpg" alt="" width="280px">
+                </div>
+                <h4>Nike</h4>
+                <p>Description will be here, If we provide any description about product</p>
+                <div class="price">
+                    <span>$24.00</span>
+                    <button onclick="addToCart()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <Script src="./JS/script.js"></Script>
+</body>
+
+</html>
